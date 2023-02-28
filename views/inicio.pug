@@ -1,0 +1,35 @@
+extends ./layout/index
+
+block slider
+    .slider 
+        h1 Rio de Janeiro 
+        em aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget tellus vitae ligula interdum ornare eu vitae magna. Phasellus lobortis pharetra risus nec imperdiet. Curabitur eget faucibus augue. Sed feugiat mi at laoreet imperdiet. Quisque tempor, sem non commodo fermentum, orci massa malesuada quam, a aliquet turpis dui suscipit ex. Aenean augue diam, convallis in imperdiet ut, aliquet sed eros.
+                p Duis gravida ac libero nec luctus. Curabitur ultricies consectetur luctus. Suspendisse hendrerit egestas arcu, eget tempor tortor ullamcorper id.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+
+        include ./layout/bloque_viajes
+
+    .descuento
+        .container 
+            .row 
+                .col-md-5 
+                    .contenido
+                        h3 20% de descuento
+                        p.titulo Viaje a Rio de Janeiro
+                        p.fecha 20 de Diciembre al 30 de Diciembre
+                        p.precio Antes: <span>$ 1,500</span> <br> Ahora: $ 1,200
+
+    .container
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimonios
+
+        
+            
